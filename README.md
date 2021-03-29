@@ -7,7 +7,7 @@ The "data" value should be base64_encoded.
 
 Also an authorisation key should be send in the "key" input, plaintext. 
 
-For experimenting purposes and to reduce accidental posts, I've placed an IP restriction as well, which can be changed from config.cfg.
+For experimenting purposes and to reduce accidental POSTs, I've placed an IP restriction as well, which can be changed from config.cfg.
 
 
 I'm not really familiar with Python, so, if you have any suggestion for improving this little daemon script, feel free to submit your ideea. :)
