@@ -16,7 +16,7 @@ import base64
 
 #definitions#
 runport=8081
-address=''
+ip_address='0.0.0.0'
 
 class GP(BaseHTTPRequestHandler):
     def _set_headers(self):
@@ -96,7 +96,7 @@ class GP(BaseHTTPRequestHandler):
                     self.wfile.write(oly.encode(encoding='utf_8')) 
 
 def run(server_class=HTTPServer, handler_class=GP, port=runport):
-    server_address = ('', port)
+    server_address = (ip_address, port)
     httpd = server_class(server_address, handler_class)
     print ('Server running at localhost:' + str(runport) + '...')
     httpd.serve_forever()
